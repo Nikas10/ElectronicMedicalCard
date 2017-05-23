@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NMCP - Персональная страница</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="images/icon.png">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css"> 
+	<link rel="stylesheet" type="text/css" href="resourses/header.css">
+	<link rel="stylesheet" type="text/css" href="resourses/user.css">
+	<link rel="stylesheet" type="text/css" href="resourses/footer.css">
+	<link rel="stylesheet" type="text/css" href="resourses/elements.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> 
+	<script src="js/ajax_handler.js" type="text/javascript"></script>
+	<script src="js/ajax_authentication.js" type="text/javascript"></script>
+	<script src="js/element_scripts/constructors_scripts.js" type="text/javascript"></script>
+	<script src="js/element_scripts/header_scripts.js" type="text/javascript"></script>
+	<script src="js/element_scripts/footer_scripts.js" type="text/javascript"></script>
+	<script src="js/element_scripts/user_scripts.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		var currentSession = Session.startSession(
+			function() {
+				$(document).ready(function() {
+					showUserPanel();
+
+					var getParams = getParam();
+
+					var userData = currentSession.getUserData();
+					showUserHeaderPanel(userData);
+	
+					if (userData.type == 'patient') {
+						createMenuItemsForPatient(currentSession);
+
+						if (getParams['item'] == 'medCard') {
+							$(document).ready(function() {
+								checkMenuItem('button-Card');
+							});
+						}
+					} else if (userData.type == 'medical worker') {
+						createMenuItemsForDoctor(currentSession);
+
+						if (getParams['item'] == 'patient_search') {
+							$(document).ready(function() {
+								checkMenuItem('button-SearchPatients');
+							});
+						}
+					}
+				})
+			},
+			function () {
+				window.location.href = "authentication.html";
+				//$(document).ready(showUserPanel);
+			},
+			function () {
+				$(document).ready(function() {
+					showHeaderPanel();
+					showFooterPanel();
+					userPageAwaiting(currentSession);
+				});
+			}
+		);
+	</script>
+</head>
+<body class="user-page">
+	<div class="wrapper">
+		<header class="page-header">
+
+		</header>
+		<div class="page-layout">
+			<div class="page-layout-content">
+
+			</div>
+		</div>
+	</div>
+	<footer class="page-footer">
+
+	</footer>
+</body>
+</html>

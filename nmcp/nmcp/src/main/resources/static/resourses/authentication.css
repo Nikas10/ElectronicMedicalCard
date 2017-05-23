@@ -1,0 +1,252 @@
+body.registration-page {
+	margin: 48px 0 0 0;
+}
+
+.page-layout-content {
+	padding: 15px 20% 0px 20%;
+	margin: 0;
+}
+
+#page-head-text {
+	font-family: sans-serif;
+	font-size: 49px;
+	margin-bottom: 0;
+	font-weight: bold;
+	color: #2B313B;
+}
+
+#page-head-text small {
+	font-size: 25px;
+	padding-left: 26px;
+}
+
+#page-head-text small a {
+	text-decoration: none;
+	color: #657186;
+}
+
+#form-input {
+	border-top: 1px solid rgb(180,180,200);
+	padding-top: 30px;
+	margin-top: 15px;
+	padding-left: 10%;
+	padding-bottom: 100px;
+}
+
+.form-group {
+	padding-bottom: 15px;
+	padding-left: 15px;
+}
+
+.form-label {
+	font-family: sans-serif;
+	font-size: 15px;
+	margin: 0 0 3px 20px;
+	color: #505050;
+}
+
+#user-selection {
+	font-size: 22px;
+	text-align: center;
+	margin: 0 0 12px 0;
+}
+
+.form-radio {
+	text-align: center;
+}
+
+.form-radio-label {
+	font-size: 19px;
+	font-family: sans-serif;
+	color: #404040;
+	margin: 10px 35px 0px 35px;
+}
+
+.indent {
+	padding: 30px 0 0 0;
+}
+
+.form-input {
+	width: 280px;
+	height: 25px;
+	font-size: 16px;
+	border-bottom: 1px solid rgb(200,200,200);
+	border-left: 1px solid rgb(180,180,190);
+	border-right: 1px solid rgb(170,170,190);
+	border-top: 1px solid rgb(160,160,160);
+	border-radius: 3px;
+	transition: border 0.2s;
+	padding-left: 6px;
+}
+
+.form-input:hover {
+	border-bottom: 1px solid rgb(150,150,200);
+	border-left: 1px solid rgb(150,150,190);
+	border-right: 1px solid rgb(150,150,190);
+	border-top: 1px solid rgb(150,150,160);
+}
+
+.text-error {
+	padding-left: 35px;
+	font-size: 17px;
+	font-family: sans-serif;
+	margin-top: 10px;
+	width:600px;
+	color:red;
+}
+
+.read-ahtung {
+	padding-left: 15px;
+	font-size: 16px;
+	font-family: sans-serif;
+	margin-top: 30px;
+	width:600px;
+}
+
+.read-ahtung a {
+	text-decoration: none;
+	color: #1E90FF;
+}
+
+.read-ahtung a:hover {
+	color: #1062B2;
+}
+
+.submition-button {
+	margin-top: 10px;
+	margin-left: 15px;
+	width: 170px;
+	height: 38px;
+	font-size: 14px;
+	border-radius: 4px;
+	border-width: 1px;
+	color: white;
+	font-weight: bold;
+
+	background-color: #3195F6;
+	background-image: linear-gradient(-180deg, #3195F6 0%, #147CE1 90%);
+	border-color: rgba(27,31,35,0.5);
+}
+
+.submition-button:hover {
+	background-color: #3195F6;
+	background-image: linear-gradient(-180deg, #097FF1 0%, #1062B2 90%);
+	border-color: rgba(17,21,25,0.5);
+}
+
+.submition-button:active {
+	background-color: #3195F6;
+	background-image: linear-gradient(-180deg, #1062B2 0%, #1062B2 90%);
+	border-color: rgba(17,21,25,0.5);
+}
+
+.reg-info {
+	margin-bottom: 25px;
+}
+
+.reg-info-text {
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #657186;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.reg-users-enum {
+	list-style: none;
+}
+
+.reg-users-enum li {
+	margin: 15px;
+}
+
+.reg-type-link {
+	font-size: 23px;
+	text-decoration: none;
+	font-family: sans-serif;
+	color: #1E90FF;
+}
+
+.reg-type-link:hover {
+	color: #1062B2;
+}
+
+
+
+#auth-content-block {
+	padding-top: 30px;
+	padding-bottom: 20px;
+	max-width: 100%;
+}
+#auth-header {
+	max-width: 100%;
+}
+.hr-auth-header {
+	width: 75%;
+	border-color: rgba(100,100,100, 0.6);
+}
+#auth-content {
+	max-width: 100%;
+	padding-top: 20px;
+}
+#auth-content-userType, #auth-content-userData, #auth-content-userPasswords {
+	padding-right: 20px;
+}
+#auth-content-usersFiles {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+}
+#auth-content-iput-checkPassword {
+	transition: opacity 0.2s;
+	opacity: 0;
+}
+.auth-error-block {
+	margin-top: 50px;
+	min-height: 90px;
+	text-align: center;
+}
+.auth-error-message-block {
+	margin-top: 10px;
+	margin-right: 3%;
+	margin-left: 5%;
+	padding: 20px;
+	background-color: #EDA1A2; 
+	border: 1px dotted #C41719;
+	border-radius: 5px;
+}
+.auth-buttons-block {
+	text-align: center;
+}
+#auth-content-registrationButton {
+	margin-left: 20px;
+}
+
+.auth-readInfo-block {
+	padding-left: 15px;
+	font-size: 15px;
+	font-family: sans-serif;
+	margin-top: 30px;
+	width:600px;
+}
+.auth-readInfo-block a {
+	text-decoration: none;
+	color: #1E90FF;
+}
+.auth-readInfo-block a:hover {
+	color: #1062B2;
+}
+
+#auth-confirm-popUp-content {
+	min-height: 130px;
+	padding-left: 10%;
+	padding-right: 10%;
+	text-align: center;
+}
+#auth-confirm-popUp-content p {
+	padding-top: 60px;
+	padding-bottom: 30px;
+}
+#auth-confirm-popUp-content-validation-cancel {
+	margin-left: 20px;
+}

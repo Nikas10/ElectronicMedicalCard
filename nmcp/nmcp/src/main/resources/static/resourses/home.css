@@ -1,0 +1,137 @@
+body.home-page {
+	margin: 48px 0 0 0;
+}
+
+.page-layout p {
+	line-height: normal;
+}
+
+.page-layout {
+	z-index: 1;
+}
+
+.page-layout-content {
+	padding: 30px 20% 0;
+}
+
+#home-page-mainText {
+	font-family: sans-serif;
+	font-size: 52px;
+	color: rgb(50,50,50);
+	margin-bottom: 0px;
+	text-align: center;
+	margin-top: 52px;
+}
+
+#home-page-descr {
+	font-family: sans-serif;
+	font-size: 22px;
+	color: rgb(100,100,100);
+	margin-bottom: 22px;
+	margin-top: 22px;
+}
+
+b#hme-page-descr-assign {
+	color: #1E90FF;
+}
+
+.home-page-info {
+	margin-top: 50px;
+	width: 100%;
+	height: 280px;
+}
+
+.home-page-info tr td {
+	padding: 1px;
+}
+
+.home-page-info-block {
+	height: 150px;
+	background-color: #2B313B;
+	border-radius: 1px;
+	transition: 0.6s;
+	width: 280px;
+	position: relative;
+}
+
+.home-page-info-block:hover {
+	height: 170px;
+	width: 310px;
+}
+
+#home-page-info-patient {
+	margin-right: 0;
+	float:right;
+}
+
+#home-page-info-doctor {
+	margin-left: 0;
+	float: left;
+}
+
+
+.home-page-info-title {
+	font-size: 18px;
+	font-family: sans-serif;
+	color: #CBD2DD;
+	text-align: center;
+	margin-top: 18px;
+	margin-bottom: 18px;
+}
+/*
+#home-page-info-patient .home-page-info-title {
+	padding-left: 50px;
+}
+
+#home-page-info-doctor .home-page-info-title {
+	float: right;
+	padding-right: 50px;
+}
+*/
+.home-page-info-text-block {
+	width: 240px;
+}
+
+#home-page-info-patient .home-page-info-text-block {
+	float: right;
+	text-align: right;
+	padding-right: 10px;
+}
+
+#home-page-info-doctor .home-page-info-text-block {
+	float: left;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.home-page-info-text {
+	margin-top: 0px;
+	font-size: 15px;
+	font-family: sans-serif;
+	color: #9EABBD;
+	margin-bottom: 15px;
+}
+
+.home-page-info-link {
+	text-decoration: none;
+	margin-top: 1%;
+	color: #3B7EBF ;
+	font-size: 14px;
+	font-family: sans-serif;
+	position: absolute;
+    bottom: 5px;
+}
+
+.home-page-info-link:hover {
+	color: #1E90FF;
+}
+
+#home-page-info-patient .home-page-info-link {
+	text-align: left;
+	left: 10px;
+}
+
+#home-page-info-doctor .home-page-info-link {
+	text-align: right;
+	right: 10px;
+}

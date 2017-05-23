@@ -1,0 +1,279 @@
+body.user-page {
+	margin: 48px 0 0 0;
+}
+
+.page-layout {
+	z-index: 1;
+}
+
+.user-page-menu {
+	position: fixed;
+	left: 0;
+	width: 220px;
+	margin-top: 8px;
+	height: calc(100% - 48px);
+	background-color: #F2F2FF;
+	vertical-align: top;
+	border-right: 1px solid #449EF3;
+}
+
+p.menu-header-text {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #293038;
+	margin-top: 15px;
+}
+
+p.menu-header-text a {
+	text-decoration: none;
+	color: #293038;
+	cursor: pointer;
+}
+
+p.menu-header-text a:hover {
+	border-bottom: 1px solid #293038;
+}
+
+hr.menu-header-line {
+	width: 75%;
+	border-color: gray;
+	opacity: 0.7;
+}
+
+.user-page-tableMenu {
+	height: auto;
+	width: 100%;
+}
+
+.user-page-tableMenu tr {
+	padding: 0;
+}
+
+.user-page-tableMenu tr td {
+	padding: 0;
+	/*padding-right: 1px;*/
+}
+
+button.menu-button {
+	height: 45px;
+	width: 100%;
+	font-size:  14px;
+	font-family: sans-serif;
+	margin: 0;
+	transition: 0.2s;
+	color: #0B0F14;
+	background-color: transparent;
+	border: 0;
+  	cursor: pointer;
+  	text-decoration: none;
+  	user-select: none;
+  	outline: none;
+}
+
+button.menu-button:hover {
+	border: none;
+	background-color: #2B3746;
+	color: white;
+}
+
+.user-page-content {
+	position: relative;
+	left: 220px;
+	right: 0px;
+	width: calc(100% - 220px - 40px);
+	padding: 30px 20px;
+}
+
+
+
+.awaiting-block {
+	top: 40%;
+	position: fixed;
+	width: 100%;
+}
+.awaiting-animation-block {
+	margin-bottom: 80px;
+}
+.awaiting-block hr {
+	width: 75%;
+	border-color: #FFFFFF;
+	text-align: center;
+}
+.awaiting-block p {
+	text-align: center;
+	font-size: 21px;
+	font-family: sans-serif;
+	color: #555555;
+}
+
+
+
+.PersonalPage-content {
+	margin-top: 20px;
+}
+#PersonalData-userImage-image {
+	width: inherit;
+	height: auto;
+}
+#PersonalData-userImage-fileUploader {
+	text-align: center;
+}
+#PersonalData-userData {
+	padding-left: 8%;
+	padding-right: 8%;
+}
+
+
+
+
+
+.transaction-block .list-group-item {
+	border-left: 1px solid rgb(221, 221, 221);
+	border-right: 1px solid rgb(221, 221, 221);
+	border-radius: 3px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	box-shadow: 3px 3px 2px #ccc;
+	transition: 0.5s;
+}
+.transaction-block .list-group-item:hover {
+ 	box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+}
+.transaction-block .list-group-item-status {
+	width: 10px;
+	height: inherit;
+
+}
+.transaction-block #Tr-status-wait {
+	background-color: #F7C326;
+}
+
+.tr-item-blockBorder {
+	border: none;
+	border-bottom: 1px solid rgb(221, 221, 221);
+
+	margin-top: 13px;
+	margin-bottom: 13px;
+	transition: height 0.7s;
+	height: 0;
+	background-color: white;
+	text-align: center;
+}
+
+.transaction-block .btn {
+	margin-right: 20px;
+	margin-left: 20px;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+
+/*
+.transaction-block .list-group-item > .show-menu {
+	position: absolute;
+	height: 100%; width:24px;
+	top: 0px; right: 0px;
+	background-color: rgba(51, 51, 51, 0.2);
+	cursor: pointer;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.transaction-block .list-group-item > .show-menu > span {
+	position: absolute;
+	top: 50%;
+	margin-top: -7px;
+	padding: 0px 5px;
+}
+.transaction-block .list-group-submenu {
+	position: absolute;
+	top: 0px;
+	right: -88px;
+	white-space: nowrap;
+	list-style: none;
+	padding-left: 0px;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	-o-transition: all 0.5s ease-in-out;
+	-ms-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+.transaction-block .list-group-submenu .list-group-submenu-item {
+	float: right;
+	white-space: nowrap;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: rgb(51, 51, 51);
+	color: rgb(235, 235, 235);
+	cursor: pointer;
+}
+.transaction-block .list-group-item.open {
+	margin-left: -88px;
+}
+.transaction-block .list-group-item.open > .show-menu {
+	right: 88px;
+}
+.transaction-block .list-group-item.open .list-group-submenu{
+	right: 0px;
+}
+.transaction-block .list-group-submenu .list-group-submenu-item.primary {
+	color: rgb(255, 255, 255);
+	background-color: rgb(50, 118, 177);
+}
+.transaction-block .list-group-submenu .list-group-submenu-item.success {
+	color: rgb(255, 255, 255);
+	background-color: rgb(92, 184, 92);
+}
+.transaction-block .list-group-submenu .list-group-submenu-item.info {
+	color: rgb(255, 255, 255);
+	background-color: rgb(57, 179, 215);
+}
+.transaction-block .list-group-submenu .list-group-submenu-item.warning {
+	color: rgb(255, 255, 255);
+	background-color: rgb(240, 173, 78);
+}
+.transaction-block .list-group-submenu .list-group-submenu-item.danger {
+	color: rgb(255, 255, 255);
+	background-color: rgb(217, 83, 79);
+}
+*/
+
+
+
+#PersonalData-header-CardButton {
+	margin-left: 20px;
+}
+
+.custab{
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin: 5% 0;
+    box-shadow: 3px 3px 2px #ccc;
+    transition: 0.5s;
+}
+.custab:hover{
+    box-shadow: 3px 3px 0px transparent;
+    transition: 0.5s;
+}
+.sndColumn {
+	word-break: break-all;
+}
+
+
+
+/*#SearchPatients-header, #Card-header, #PersonalData-header {
+	text-align: left;
+	margin-left: 50px;
+}*/
+
+.header-text-block {
+	margin-left: 50px;
+}
